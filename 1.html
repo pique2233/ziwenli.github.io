@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Animation</title>
+    <style>
+        @keyframes slide {
+            0% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .rainbow {
+            height: 3px;
+            background: linear-gradient(90deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3);
+            background-size: 300% 100%;
+            margin: 15px 0;
+            animation: slide 3s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="rainbow"></div>
+</body>
+</html>
